@@ -15,19 +15,13 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $usuario);
 $stmt->execute();
 $result = $stmt->get_result();
-$bandera = '';
+
 if ($row = $result->fetch_assoc()) {
     if (password_verify($password, $row['password'])) {
-        header("Location: dashboard.html");
-        exit();
-        $bandera = 'correcta';
+        echo "ok";
     } else {
-        header("Location: index.html");
-        exit();
-        $bandera = 'contraseña';
+        echo "pass_error";
     }
 } else {
-    header("Location: index.html");
-    exit();
-    $bandera = 'usuario';
+    echo "user_error";
 }

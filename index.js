@@ -1,10 +1,13 @@
 const formulario = document.getElementById('formlogin');
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-const inputusuario = document.getElementById('usuario');
-const inputpass = document.getElementById('pass');
->>>>>>> 18652f2 (Cambio de direccion)
+
+function mostrarError(msg) {
+    document.getElementById("pop-up-text").innerText = msg;
+    document.getElementById("popup").style.display = "flex";
+}
+
+function cerrarPopup() {
+    document.getElementById("popup").style.display = "none";
+}
 
 formulario.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -17,43 +20,16 @@ formulario.addEventListener('submit', function(e) {
     })
     .then(res => res.text())
     .then(data => {
+        console.log("RESPUESTA:", JSON.stringify(data));
 
-<<<<<<< HEAD
-=======
-    let usuarioingresado = inputusuario.value.trim();
-    let passwordingresada = inputpass.value;
-
-    if (usuarioingresado == USUARIOV && passwordingresada == passV){
-        window.location.href = "dashboard.html";
-    }
-});
-=======
-
-formulario.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    let formData = new FormData(formulario);
-
-    fetch("login.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(res => res.text())
-    .then(data => {
-
->>>>>>> 18652f2 (Cambio de direccion)
-        if (data === "ok") {
+        if (data.trim() === "ok") {
             window.location.href = "dashboard.html";
-        } 
-        else if (data === "pass_error") {
+        } else if (data.trim() === "pass_error") {
             mostrarError("Contraseña incorrecta");
-        } 
-        else if (data === "user_error") {
-            mostrarError("Usuario no existe");
+        } else if (data.trim() === "user_error") {
+            mostrarError("Usuario incorrecto");
+        } else {
+            mostrarError("Respuesta rara: " + data);
         }
     });
 });
-<<<<<<< HEAD
-=======
->>>>>>> 7131217 (Cambio de direccion)
->>>>>>> 18652f2 (Cambio de direccion)
