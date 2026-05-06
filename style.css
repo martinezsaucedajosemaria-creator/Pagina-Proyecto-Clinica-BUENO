@@ -1,0 +1,117 @@
+html { height: 100% }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+body {
+    /* 1. Ruta de la imagen y configuración de visualización */
+    background-image: url('fondo.jpg'); /* Nombre de tu archivo de imagen */
+    background-position: center;       /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat;       /* Evita que la imagen se repita como mosaico */
+    background-size: cover;             /* Ajusta la imagen para cubrir toda la pantalla */
+    
+    /* 2. Dimensiones y fijación */
+    min-height: 100vh;
+    background-attachment: fixed;       /* Evita que el fondo se mueva al hacer scroll */
+    margin: 0;                          /* Elimina márgenes por defecto del navegador */
+}
+
+.btnIngresar {
+    /* 1. Dimensiones y Espaciado */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+    /* 2. Colores y Bordes */
+    background-color: #547ba4; /* Azul */
+    color: white; /* Texto blanco */
+    border: none; /* Elimina el borde gris por defecto */
+    border-radius: 6px; /* Esquinas redondeadas */
+    
+    /* 3. Comportamiento del cursor y transiciones */
+    cursor: pointer; /* Cambia la flecha por la mano al apuntar */
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Suaviza los cambios */
+}
+
+.btnIngresar:hover {
+    background-color: #2b95ff; /* Azul más oscuro */
+}
+
+input[type="password"], input[type="text"]{
+    
+    /* 1. Dimensiones y Espaciado */
+    padding: 2px 16px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+
+    
+    /* 2. Colores y Bordes */
+    background-color: #eeecf6; /* Azul */
+    color: rgb(84, 84, 106); /* Texto blanco */
+    border: none; /* Elimina el borde gris por defecto */
+    border-radius: 2px; /* Esquinas redondeadas */
+    
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Suaviza los cambios */
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgb(16, 255, 231);
+  outline: 0;
+}
+.login {
+    /* 1. Propiedades de posicionamiento para centrar */
+    position: absolute;
+    top: 50%;                    /* Desplaza el borde superior al 50% de la pantalla */
+    left: 50%;                   /* Desplaza el borde izquierdo al 50% de la pantalla */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto del propio elemento */
+
+    /* 2. Estilos visuales de la tarjeta */
+    background-color: rgb(148, 184, 249);
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    text-align: center;
+}
+
+.login h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-style: oblique;
+    font-display: unset;
+    color: #202538;
+}
+.login p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-style: oblique;
+    font-display: unset;
+    color: #202538;
+}
+.logo{
+    position: absolute;
+    top: 18%;                    /* Desplaza el borde superior al 50% de la pantalla */
+    left: 50%;                   /* Desplaza el borde izquierdo al 50% de la pantalla */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto del propio elemento */
+    width: 120px;
+    border-radius: 300px;
+}
+
+.pop-up {
+    position: absolute;
+    top: 50%;                    /* Desplaza el borde superior al 50% de la pantalla */
+    left: 50%;                   /* Desplaza el borde izquierdo al 50% de la pantalla */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto del propio elemento */
+    
+    /* 2. Estilos visuales de la tarjeta */
+    background-color: rgb(250, 252, 255);
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    text-align: center;
+}
+
+.pop-up-content h2{
+    color: #520e0e;
+}

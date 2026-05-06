@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clinica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="icono.png" alt="20px" id="logo" class="logo">
+    <form id="formlogin" action="login.php" method="POST">
+        <div class = "login">
+            <h1>Inicio de sesion</h1>
+            <p>Usuario</p>
+            <input type="text" id="usuario" name="usuario" requied placeholder="Usuario">
+            <p>Contraseña</p>
+            <input type="password" id="pass" name="pass" requied placeholder="Contraseña">
+            <br></br>
+            <button type="submit" id = "btnIngresar" class="btnIngresar">Ingresar</button>
+        </div>
+        <div class="pop-up">
+            <div class = "pop-up-content">
+                <h2>Error</h2>
+                <p id="pop-up-text"></p>
+                <button onclick="cerrarpopup()">Aceptar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
