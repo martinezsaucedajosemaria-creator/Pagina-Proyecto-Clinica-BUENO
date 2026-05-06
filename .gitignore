@@ -1,0 +1,56 @@
+# =========================
+# Sistema / OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Archivos temporales
+# =========================
+*.tmp
+*.temp
+*.swp
+
+# =========================
+# Dependencias (por si luego usas Composer o Node)
+# =========================
+/vendor/
+/node_modules/
+
+# =========================
+# Configuración sensible
+# =========================
+.env
+.env.local
+config.php
+
+# =========================
+# Archivos de base de datos (NO subir BD real)
+# =========================
+*.sql
+*.sqlite
+*.db
+
+# =========================
+# Archivos de XAMPP / Apache / MySQL (por si acaso)
+# =========================
+xampp/
+mysql/
+apache/
+
+# =========================
+# IDEs / editores
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Backups
+# =========================
+*.bak
+*.backup
