@@ -110,7 +110,32 @@ input[type="password"]:focus, input[type="text"]:focus {
 }
 
 .pop-up-content {
-    background: white;
+    background: rgb(253, 248, 207);
     padding: 20px;
+    color: rgb(101, 58, 2);
     border-radius: 10px;
+}
+.imgalert {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    width: 5%;
+    height: 10%;
+}
+
+.btncerrar{
+    border-style:none;
+    font-size: medium;
+    color: rgb(56, 32, 0);
+    background-color: rgb(245, 196, 132);
+    position: absolute;
+    left: 47.5%;
+    top: 56%;    
+    border-radius: 2px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia la flecha por la mano al apuntar */
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Suaviza los cambios */
+}
+
+.btncerrar:hover{
+    background-color: rgb(247, 233, 215);
 }

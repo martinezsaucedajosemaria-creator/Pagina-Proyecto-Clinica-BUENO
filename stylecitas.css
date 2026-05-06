@@ -1,0 +1,99 @@
+.contenedor {
+    display: flex;             /* 1. Activa el modo Flexbox */
+    flex-direction: row;       /* 2. Alinea los bloques en fila (horizontal) */
+    justify-content: space-between; /* 3. Distribuye el espacio y los separa */
+    align-items: center;   /* 4. Los alinea en la parte superior */
+    
+    width: 100%;               /* Asegura que ocupe todo el ancho */
+    padding: 20px;             /* Margen interno del contenedor */
+    box-sizing: border-box;
+}
+
+.img{
+  position: absolute;        /* 4. CLAVE: Se posiciona libremente dentro del bloque */
+  right: 25px;               /* 5. Distancia desde el borde derecho */
+  bottom: 20px;              /* 6. Distancia desde el borde inferior */
+  width: 50px;   
+  height: auto;
+  opacity: 0.7;
+}
+.b-azul{
+    position:relative;
+    width: 300px;
+    height: 70px;
+    opacity: 95%;
+    background-color: #dee8ff;
+    font-size: x-large;
+    color:rgb(26, 61, 91);
+    border-color: #a4b4e0;
+    border-style: solid;
+    border-radius: 10%;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer; /* Cambia la flecha por la mano al apuntar */
+    transition: background-color 0.3s ease, transform 0.1s ease; 
+}
+
+.b-verde{
+    position:relative;
+    width: 300px;
+    height: 70px;
+    opacity: 95%;
+    background-color: #deffeb;
+    font-size: x-large;
+    color:rgb(28, 91, 26);
+    border-color: #a4e0ac;
+    border-style: solid;
+    border-radius: 10%;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer; /* Cambia la flecha por la mano al apuntar */
+    transition: background-color 0.3s ease, transform 0.1s ease; 
+}
+
+.b-amarillo{
+    position:relative;
+    width: 300px;
+    height: 70px;
+    opacity: 95%;
+    background-color: #fdffde;
+    font-size: x-large;
+    color:rgb(91, 86, 26);
+    border-color: #e0daa4;
+    border-style: solid;
+    border-radius: 10%;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer; /* Cambia la flecha por la mano al apuntar */
+    transition: background-color 0.3s ease, transform 0.1s ease; 
+}
+
+.b-rojo{
+    position:relative;
+    width: 300px;
+    height: 70px;
+    opacity: 95%;
+    background-color: #ffdede;
+    font-size: x-large;
+    color:rgb(91, 26, 26);
+    border-color: #e0a4a4;
+    border-style: solid;
+    border-radius: 10%;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer; /* Cambia la flecha por la mano al apuntar */
+    transition: background-color 0.3s ease, transform 0.1s ease; 
+}
+
+.b-azul:hover{
+        background-color: #acc5ff;
+}
+.b-verde:hover{
+        background-color: #acffbd;
+}
+.b-amarillo:hover{
+        background-color: #e9ffac;
+}
+.b-rojo:hover{
+        background-color: #f5acff;
+}
