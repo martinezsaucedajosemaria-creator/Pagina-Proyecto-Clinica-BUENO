@@ -9,9 +9,9 @@ $result = mysqli_query($enlace, $consulta);
 <html lang="es">
 <head>
     <style>
-        table { width: 80%; border-collapse: collapse; font-family: sans-serif; background-color: #fdf8cf; }
-        th { background: #a18262; color: white; padding: 12px; }
-        td { padding: 10px; border-bottom: 1px solid #ddd; text-align: center; color: #653a02; }
+        table { width: 80%; border-collapse: collapse; font-family: sans-serif; background-color: #cfd4fd; }
+        th { background: #6f62a1; color: white; padding: 12px; }
+        td { padding: 10px; border-bottom: 1px solid #dddddd; text-align: center; color: #653a02; }
     </style>
 </head>
 <body>

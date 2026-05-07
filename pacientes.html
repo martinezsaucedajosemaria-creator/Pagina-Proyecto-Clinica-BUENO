@@ -29,21 +29,21 @@
         <div class="b-azul">
             <span class="b-titulo">Total de Pacientes</span>
             <br>
-            <span class="b-valor">128</span>
+            <span class="b-valor"  id="num-total">0</span>
             <img src="calendario.png" width="50" class="img">
         </div>
 
         <div class="b-verde">
             <span class="b-titulo">Nuevos</span>
             <br>
-            <span class="b-valor">12</span>
+            <span class="b-valor" id="num-nuevos">0</span>
             <img src="despertador.png" width="50" class="img">
         </div>
 
         <div class="b-amarillo">
             <span class="b-titulo">Citas programadas</span>
             <br>
-            <span class="b-valor">35</span>
+            <span class="b-valor" >35</span>
             <img src="verificar.png" width="50" class="img">
         </div>
 
@@ -130,5 +130,23 @@
         </div>
     </div>
     <script src="pacientes.js"></script>
+    <script>
+        function actualizarEstadisticas() {
+            // Agregamos ?t= + Date.now() para que la URL sea siempre distinta
+            fetch('consultas_box.php?t=' + Date.now()) 
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('num-total').innerText = data.total;
+                    document.getElementById('num-nuevos').innerText = data.nuevos;
+                })
+                .catch(error => console.error('Error al obtener datos:', error));
+        }
+
+        // Ejecutar cuando cargue la página
+        actualizarEstadisticas();
+        
+        // Opcional: Actualizar cada 30 segundos para que sea "tiempo real"
+        setInterval(actualizarEstadisticas, 30000);
+    </script>
     </body>
 </html>

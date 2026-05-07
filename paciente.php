@@ -20,7 +20,7 @@ if(isset($_POST['registro'])){
     $tsangre = $_POST['tsangre'];
     $alergias = $_POST['alergias'];
 
-    $insertarDatos = "INSERT INTO paciente VALUES('','$nombre','$fecha','$genero','$eCivil','$telefono','$correo', '$direccion','$ciudad','$cpostal','$tsangre','$alergias')";
+    $insertarDatos = "INSERT INTO paciente VALUES('','$nombre','$fecha','$genero','$eCivil','$telefono','$correo', '$direccion','$ciudad','$cpostal','$tsangre','$alergias',NOW())";
 
     $ejecutarInsertar = mysqli_query ($enlace,$insertarDatos);
 
