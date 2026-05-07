@@ -2,38 +2,34 @@ html { height: 100% }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 body {
-    /* 1. Ruta de la imagen y configuración de visualización */
-    background-image: url('fondo.jpg'); /* Nombre de tu archivo de imagen */
-    background-position: center;       /* Centra la imagen en la pantalla */
-    background-repeat: no-repeat;       /* Evita que la imagen se repita como mosaico */
-    background-size: cover;             /* Ajusta la imagen para cubrir toda la pantalla */
+    background-image: url('fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
-    /* 2. Dimensiones y fijación */
     min-height: 100vh;
-    background-attachment: fixed;       /* Evita que el fondo se mueva al hacer scroll */
-    margin: 0;                          /* Elimina márgenes por defecto del navegador */
+    background-attachment: fixed;      
+    margin: 0;                         
 }
 
 .btnIngresar {
-    /* 1. Dimensiones y Espaciado */
     padding: 12px 24px;
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     
-    /* 2. Colores y Bordes */
-    background-color: #547ba4; /* Azul */
-    color: white; /* Texto blanco */
-    border: none; /* Elimina el borde gris por defecto */
-    border-radius: 6px; /* Esquinas redondeadas */
+    background-color: #547ba4; 
+    color: white;
+    border: none;
+    border-radius: 6px;
     
-    /* 3. Comportamiento del cursor y transiciones */
-    cursor: pointer; /* Cambia la flecha por la mano al apuntar */
-    transition: background-color 0.3s ease, transform 0.1s ease; /* Suaviza los cambios */
+    
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.1s ease; 
 }
 
 .btnIngresar:hover {
-    background-color: #2b95ff; /* Azul más oscuro */
+    background-color: #2b95ff; 
 }
 
 input[type="password"], input[type="text"]{
@@ -45,13 +41,12 @@ input[type="password"], input[type="text"]{
     font-weight: lighter;
 
     
-    /* 2. Colores y Bordes */
-    background-color: #eeecf6; /* Azul */
-    color: rgb(84, 84, 106); /* Texto blanco */
-    border: none; /* Elimina el borde gris por defecto */
-    border-radius: 2px; /* Esquinas redondeadas */
+    background-color: #eeecf6;
+    color: rgb(84, 84, 106);
+    border: none;
+    border-radius: 2px;
     
-    transition: background-color 0.3s ease, transform 0.1s ease; /* Suaviza los cambios */
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 input[type="password"]:focus, input[type="text"]:focus {
@@ -59,13 +54,11 @@ input[type="password"]:focus, input[type="text"]:focus {
   outline: 0;
 }
 .login {
-    /* 1. Propiedades de posicionamiento para centrar */
     position: absolute;
-    top: 50%;                    /* Desplaza el borde superior al 50% de la pantalla */
-    left: 50%;                   /* Desplaza el borde izquierdo al 50% de la pantalla */
-    transform: translate(-50%, -50%); /* Ajusta el centro exacto del propio elemento */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    /* 2. Estilos visuales de la tarjeta */
     background-color: rgb(148, 184, 249);
     padding: 20px;
     border-radius: 3px;
@@ -90,9 +83,9 @@ input[type="password"]:focus, input[type="text"]:focus {
 }
 .logo{
     position: absolute;
-    top: 18%;                    /* Desplaza el borde superior al 50% de la pantalla */
-    left: 50%;                   /* Desplaza el borde izquierdo al 50% de la pantalla */
-    transform: translate(-50%, -50%); /* Ajusta el centro exacto del propio elemento */
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 120px;
     border-radius: 300px;
 }
@@ -131,9 +124,9 @@ input[type="password"]:focus, input[type="text"]:focus {
     position: absolute;
     left: 47.5%;
     top: 56%;    
-    border-radius: 2px; /* Esquinas redondeadas */
-    cursor: pointer; /* Cambia la flecha por la mano al apuntar */
-    transition: background-color 0.3s ease, transform 0.1s ease; /* Suaviza los cambios */
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 .btncerrar:hover{
