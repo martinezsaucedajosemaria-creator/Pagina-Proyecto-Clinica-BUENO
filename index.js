@@ -4,7 +4,6 @@ function mostrarError(msg) {
     document.getElementById("pop-up-text").innerText = msg;
     document.getElementById("popup").style.display = "flex";
 }
-
 function cerrarPopup() {
     document.getElementById("popup").style.display = "none";
 }

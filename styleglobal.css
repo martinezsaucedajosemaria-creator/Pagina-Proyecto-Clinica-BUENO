@@ -4,6 +4,9 @@ body {
     background-color: #f4f4f9;
     color: #333;
     transition: margin-left 0.3s ease;
+    height: auto !important; /* Permite que el contenido defina el largo */
+    overflow-y: auto !important; /* Habilita el scroll vertical */
+    overflow-x: hidden; /* Evita el scroll horizontal molesto */
 }
 
 .menu-toggle {
@@ -66,14 +69,14 @@ body {
 
 
 .main-contenido {
-    position: absolute;
+    position: relative;
     padding: 30px;
     margin-top: 30px;
     transition: margin-left 0.3s ease;
 }
 
 .main-content h1 {
-    position: absolute;
+    position: relative;
 
     color: #2c3e50;
 }
@@ -94,11 +97,28 @@ body {
 }
 
 .title {
-    position: absolute;
+    position: relative;
     left: 50px;
     top: 40%;
     transform: translateY(-50%);
     margin: 0;
     font-size: 22px;
     color: #2c3e50;
+}
+
+.btnRegresar {
+        background-color: #2c4275;
+        color: #fdffde;
+        position: relative;
+        left: 85%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        width: 180px;
+        height: 40px;
+        border-radius: 20px;
+        cursor:pointer;
+        transition: background-color 0.3s ease, transform 0.1s ease; 
+}
+.btnRegresar:hover{
+        background-color: #1c2c52;
 }

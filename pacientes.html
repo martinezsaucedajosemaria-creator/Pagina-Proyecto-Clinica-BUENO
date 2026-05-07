@@ -4,6 +4,7 @@
         <title>Pacientes</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styleglobal.css">
+        <link rel="stylesheet" href="stylepacientes.css">
     </head>
     <body>
 
@@ -22,6 +23,112 @@
 
                 </div>
             </header>
-            
+
+ <!--INCOMPLETO-->
+    <div class="contenedor">
+        <div class="b-azul">
+            <span class="b-titulo">Total de Pacientes</span>
+            <br>
+            <span class="b-valor">128</span>
+            <img src="calendario.png" width="50" class="img">
+        </div>
+
+        <div class="b-verde">
+            <span class="b-titulo">Nuevos</span>
+            <br>
+            <span class="b-valor">12</span>
+            <img src="despertador.png" width="50" class="img">
+        </div>
+
+        <div class="b-amarillo">
+            <span class="b-titulo">Citas programadas</span>
+            <br>
+            <span class="b-valor">35</span>
+            <img src="verificar.png" width="50" class="img">
+        </div>
+
+        <div class="b-rojo">
+            <span class="b-titulo">Citas Finalizadas</span>
+            <br>
+            <span class="b-valor">4</span>
+            <img src="cerrar.png" width="50" class="img">
+        </div>
+    </div>
+        <button type="submit" class="btnAgregar" id="btnAgregar">+ Agregar paciente</button>
+
+    <div class="contenedor-principal">
+        <h2>Listado de Pacientes Registrados</h2>
+        
+        <iframe src="pacientetabla.php" width="100%" height="400px" frameborder="0"></iframe>
+    </div>
+
+    <div id="popup" class="popup">
+            <div class="popup-content">
+                <form action="paciente.php" name="registropaciente" class="regispaciente" method="post">
+                    <h2>Informacion Personal</h2>
+                    <br>
+                    <div class="infopersonal">
+                        <p>Nombre Completo</p>
+                        <input type="text" name="nombre" class="nombre" required placeholder="Nombre del paciente">
+
+                        <p>Fecha de nacimiento</p>
+                        <input type="date" name="nacimiento" class="nacimiento" required>
+
+                        <label for="Genero">Genero</label>
+                        <select id="genero" name="genero">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="indefinido">Joto</option>
+                        </select>
+
+                        <label for="eCivil">Estado Civil</label>
+                        <select id="estadoc" name="estadoc">
+                            <option value="soltero">Soltero(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="viudo">Viudo(a)</option>
+                        </select>
+                        <p>Telefono</p>
+                        <input type="tel" name="telefono" class="telefono" required placeholder="Ej. 555-123-4567">
+
+                        <p>Correo</p>
+                        <input type="email" name="email" class="email" required placeholder="Ej. correo@gmail.com">
+                    </div>
+                    <h2>Informacion del Contacto</h2>
+                    <br>
+                    <div class="infocontacto">
+                        
+                        <p>Direccion</p>
+                        <input type="text" name="direccion" class="direccion" required placeholder="Ej. Calle 123, Col. Centro">
+                        <p>Ciudad</p>
+                        <input type="text" name="ciudad" class="ciudad" required placeholder="Ej. Ciudad de Mexico">
+                        <p>Codigo Postal</p>
+                        <input type="text" name="cp" class="cp" required placeholder="Ej. 44600">
+                    </div>
+                    <h2>Informacion Adicional</h2>
+                    <br>
+                    <div class="infoadd">
+                        <label for="tsangre">Tipo de Sangre</label>
+                        <select id="tsangre" name="tsangre">
+                            <option value="opositivo">O+</option>
+                            <option value="onegativo">O-</option>
+                            <option value="apositivo">A+</option>
+                            <option value="anegativo">A-</option>
+                            <option value="bpositivo">B+</option>
+                            <option value="bnegativo">B-</option>
+                            <option value="abpositivo">AB+</option>
+                            <option value="abnegativo">AB-</option>
+                        </select>
+                        <p>Alergias</p>
+                        <input type="text" name="alergias" class="alergias" required placeholder="Ej. Penicilina, Latex, Polvo, Etc.">
+                    </div>
+                    <br>
+                    <button type="button" onclick="cerrarPopup()" class="btnregresar">Regresar</button>
+                    <input type="submit" name="registro" class="btnenviar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="pacientes.js"></script>
     </body>
 </html>
