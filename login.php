@@ -18,7 +18,14 @@ $result = $stmt->get_result();
 
 if ($row = $result->fetch_assoc()) {
     if (password_verify($password, $row['password'])) {
-        echo "ok";
+        // AQUI ESTÁ EL CAMBIO: Evaluamos el idRol en lugar de solo imprimir "ok"
+        if ($row['idRol'] == 1) {
+            echo "admin";
+        } else if ($row['idRol'] == 2) {
+            echo "usuario";
+        } else {
+            echo "rol_desconocido";
+        }
     } else {
         echo "pass_error";
     }
