@@ -52,8 +52,59 @@
                     <img src="cerrar.png" width="50" class="img">
                 </div>
             </div>
-            
-            <a href="agregarpaciente.html"><button type="submit" class="btnAgregar">+ Agregar Cita</button></a>
+
+    <button type="submit" class="btnAgregar" id="btnAgregar">+ Agregar Cita</button>
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <form action="#" name="registropaciente" class="regispaciente" method="post">
+                    <h2>Nueva Cita</h2>
+                    <p>Completa la Informacion para agendar una nueva cita</p>
+                    <br>
+                    <div class="infopaciente">
+                        <h3>Informacion del Paciente</h3>
+                        <label>Paciente:</label>
+                        <select id="comboPacientes" class="combopacientes">
+                            <option value="">Cargando pacientes...</option>
+                        </select>
+                        <button type="button" id="btnAgregar" class="btnpaciente" onclick="window.location.href='pacientes.html'">+ Agregar Paciente</button>
+                    </div>
+                    <h2>Informacion de la Cita</h2>
+                    <br>
+                    <div class="infocita">
+                        
+                        <p>Fecha</p>
+                        <input type="date" name="fechac" class="fechac" required>
+
+                        <p>Hora</p>
+                        <input type="time" name="hora" class="hora" required>
+
+                        <label>Duracion:</label>
+                        <select id="duracion">
+                            <option value="30">30 minutos</option>
+                            <option value="60">60 minutos</option>
+                            <option value="120">120 minutos</option>
+                        </select>
+
+                        <label>Terapeuta:</label>
+                        <select id="comboTerapeuta">
+                            <option value="">Seleccionar Terapeuta...</option>
+                        </select>
+
+                        <label>Tipo de Cita:</label>
+                        <select id="comboTerapeuta">
+                            <option value="">Seleccionar tipo de cita...</option>
+                        </select>
+                        <p>Motivo/Observacion</p>
+                        <textarea id="motivo" name="motivo" class="motivo" placeholder="Escribe el motivo de la cita o alguna observacion"></textarea>
+                    </div>    
+                    <button type="button" onclick="cerrarPopup()" class="btnregresar">Regresar</button>
+                    <input type="submit" name="registro" class="btnenviar">
+            </form>
+        </div>
+    </div>    
+    <script src="citas.js"></script> 
 
     </body>
 </html>
