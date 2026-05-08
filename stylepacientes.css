@@ -186,8 +186,8 @@ html, body {
     position: absolute;
     width: 100px;
     height: 30px;
-    left: 35.5%;
-    top: 90%;    
+    left: 67%;
+    top: 88%;    
     border-radius: 2px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
@@ -205,8 +205,8 @@ html, body {
     position: absolute;
     width: 100px;
     height: 30px;
-    left: 43.5%;
-    top: 90%;    
+    left: 67%;
+    top: 83%;    
     border-radius: 2px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
